@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "campaigns-mcp-server": {
+      "command": "java",
+      "args": [
+        "-jar",
+        "/Users/vishalkotecha/repos_new/campaigns/target/campaigns-0.0.1-SNAPSHOT.jar"
+      ]
+    }
+  }
+}

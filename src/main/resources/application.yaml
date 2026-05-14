@@ -1,0 +1,27 @@
+spring:
+
+  ai:
+    model:
+      chat: bedrock-converse
+    bedrock:
+      aws:
+        region: us-east-1
+      converse:
+        chat:
+          options:
+            model: amazon.nova-pro-v1:0
+    mcp:
+      client:
+        enabled: true
+#        streamable-http:
+#          connections:
+#            campaigns:
+#              url: http://localhost:8083
+        #transport:
+          #type: stdio
+          #type: streamable
+          #streamable:
+          #  servers-configuration: classpath:mcp-servers-http.json
+        stdio:
+          servers-configuration: classpath:mcp-servers-stdio.json
+

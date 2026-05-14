@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "campaigns-mcp-server": {
+      "url": "http://localhost:8083/mcp"
+    }
+  }
+}

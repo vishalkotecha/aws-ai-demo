@@ -1,0 +1,86 @@
+2026-05-14T00:11:42.538+05:30  WARN 88077 --- [campaigns] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m32s506ms).
+2026-05-14T00:13:11.658+05:30  WARN 88077 --- [campaigns] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m29s120ms).
+2026-05-14T00:17:36.123+05:30  WARN 88077 --- [campaigns] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Custom destroy method 'close' on bean with name 'mcpSyncServer' propagated an exception: java.lang.NoClassDefFoundError: reactor/core/publisher/LambdaMonoSubscriber
+2026-05-14T00:17:36.124+05:30  WARN 88077 --- [campaigns] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Custom destroy method 'close' on bean with name 'stdioServerTransport' propagated an exception: java.lang.NoClassDefFoundError: reactor/core/publisher/LambdaMonoSubscriber
+2026-05-14T00:17:36.126+05:30  INFO 88077 --- [campaigns] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-14T00:17:36.145+05:30  WARN 88077 --- [campaigns] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'entityManagerFactory': java.lang.NoClassDefFoundError: org/springframework/util/ConcurrentReferenceHashMap$Values
+2026-05-14T00:17:36.146+05:30  INFO 88077 --- [campaigns] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-14T00:17:36.157+05:30  INFO 88077 --- [campaigns] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-05-14T01:49:15.250+05:30  INFO 3658 --- [campaigns] [main] c.e.campaigns.CampaignsApplication       : Starting CampaignsApplication v0.0.1-SNAPSHOT using Java 21.0.9 with PID 3658 (/Users/vishalkotecha/repos_new/campaigns/target/campaigns-0.0.1-SNAPSHOT.jar started by vishalkotecha in /Users/vishalkotecha/repos_new/aws_ai_demo/awsaidemo)
+2026-05-14T01:49:15.251+05:30  INFO 3658 --- [campaigns] [main] c.e.campaigns.CampaignsApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-05-14T01:49:15.480+05:30  INFO 3658 --- [campaigns] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-14T01:49:15.541+05:30  INFO 3658 --- [campaigns] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 4 JPA repository interfaces.
+2026-05-14T01:49:15.609+05:30  WARN 3658 --- [campaigns] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerAutoConfiguration' of type [org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [serverAnnotatedMethodBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-05-14T01:49:15.610+05:30  WARN 3658 --- [campaigns] [main] trationDelegate$BeanPostProcessorChecker : Bean 'serverAnnotatedBeanRegistry' of type [org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerAutoConfiguration$ServerMcpAnnotatedBeans] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [serverAnnotatedMethodBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-05-14T01:49:15.615+05:30  WARN 3658 --- [campaigns] [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.ai.mcp.server.annotation-scanner-org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerProperties' of type [org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [serverAnnotatedMethodBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-05-14T01:49:15.671+05:30  INFO 3658 --- [campaigns] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-14T01:49:15.700+05:30  INFO 3658 --- [campaigns] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-14T01:49:15.945+05:30  INFO 3658 --- [campaigns] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-14T01:49:15.961+05:30  INFO 3658 --- [campaigns] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-14T01:49:16.051+05:30  INFO 3658 --- [campaigns] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-05-14T01:49:16.052+05:30  INFO 3658 --- [campaigns] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-14T01:49:16.083+05:30  INFO 3658 --- [campaigns] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-14T01:49:16.489+05:30  INFO 3658 --- [campaigns] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-14T01:49:16.522+05:30  INFO 3658 --- [campaigns] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-14T01:49:16.562+05:30  INFO 3658 --- [campaigns] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-14T01:49:17.196+05:30  INFO 3658 --- [campaigns] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable tools capabilities, notification: true
+2026-05-14T01:49:17.251+05:30  INFO 3658 --- [campaigns] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Registered tools: 9
+2026-05-14T01:49:17.251+05:30  INFO 3658 --- [campaigns] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable resources capabilities, notification: true
+2026-05-14T01:49:17.252+05:30  INFO 3658 --- [campaigns] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable resources templates capabilities, notification: true
+2026-05-14T01:49:17.253+05:30  INFO 3658 --- [campaigns] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable prompts capabilities, notification: true
+2026-05-14T01:49:17.254+05:30  INFO 3658 --- [campaigns] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable completions capabilities
+2026-05-14T01:49:17.310+05:30  INFO 3658 --- [campaigns] [pool-2-thread-1] i.m.server.McpAsyncServer                : Client initialize request - Protocol: 2024-11-05, Capabilities: ClientCapabilities[experimental=null, roots=null, sampling=null, elicitation=null], Info: Implementation[name=spring-ai-mcp-client - campaigns-mcp-server, title=campaigns-mcp-server, version=1.0.0]
+2026-05-14T01:49:17.364+05:30  INFO 3658 --- [campaigns] [main] c.e.campaigns.CampaignsApplication       : Started CampaignsApplication in 2.332 seconds (process running for 2.577)
+2026-05-14T01:49:18.523+05:30  INFO 3658 --- [campaigns] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-14T01:49:18.525+05:30  INFO 3658 --- [campaigns] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-14T01:49:18.527+05:30  INFO 3658 --- [campaigns] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-05-14T01:49:23.482+05:30  INFO 3686 --- [campaigns] [main] c.e.campaigns.CampaignsApplication       : Starting CampaignsApplication v0.0.1-SNAPSHOT using Java 21.0.9 with PID 3686 (/Users/vishalkotecha/repos_new/campaigns/target/campaigns-0.0.1-SNAPSHOT.jar started by vishalkotecha in /Users/vishalkotecha/repos_new/aws_ai_demo/awsaidemo)
+2026-05-14T01:49:23.483+05:30  INFO 3686 --- [campaigns] [main] c.e.campaigns.CampaignsApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-05-14T01:49:23.734+05:30  INFO 3686 --- [campaigns] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-14T01:49:23.808+05:30  INFO 3686 --- [campaigns] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 4 JPA repository interfaces.
+2026-05-14T01:49:23.886+05:30  WARN 3686 --- [campaigns] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerAutoConfiguration' of type [org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [serverAnnotatedMethodBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-05-14T01:49:23.887+05:30  WARN 3686 --- [campaigns] [main] trationDelegate$BeanPostProcessorChecker : Bean 'serverAnnotatedBeanRegistry' of type [org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerAutoConfiguration$ServerMcpAnnotatedBeans] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [serverAnnotatedMethodBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-05-14T01:49:23.891+05:30  WARN 3686 --- [campaigns] [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.ai.mcp.server.annotation-scanner-org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerProperties' of type [org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [serverAnnotatedMethodBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-05-14T01:49:23.951+05:30  INFO 3686 --- [campaigns] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-14T01:49:23.983+05:30  INFO 3686 --- [campaigns] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-14T01:49:24.245+05:30  INFO 3686 --- [campaigns] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-14T01:49:24.261+05:30  INFO 3686 --- [campaigns] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-14T01:49:24.353+05:30  INFO 3686 --- [campaigns] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-05-14T01:49:24.354+05:30  INFO 3686 --- [campaigns] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-14T01:49:24.387+05:30  INFO 3686 --- [campaigns] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-14T01:49:24.878+05:30  INFO 3686 --- [campaigns] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-14T01:49:24.916+05:30  INFO 3686 --- [campaigns] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-14T01:49:24.967+05:30  INFO 3686 --- [campaigns] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-14T01:49:25.663+05:30  INFO 3686 --- [campaigns] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable tools capabilities, notification: true
+2026-05-14T01:49:25.721+05:30  INFO 3686 --- [campaigns] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Registered tools: 9
+2026-05-14T01:49:25.722+05:30  INFO 3686 --- [campaigns] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable resources capabilities, notification: true
+2026-05-14T01:49:25.723+05:30  INFO 3686 --- [campaigns] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable resources templates capabilities, notification: true
+2026-05-14T01:49:25.723+05:30  INFO 3686 --- [campaigns] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable prompts capabilities, notification: true
+2026-05-14T01:49:25.724+05:30  INFO 3686 --- [campaigns] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable completions capabilities
+2026-05-14T01:49:25.788+05:30  INFO 3686 --- [campaigns] [pool-2-thread-1] i.m.server.McpAsyncServer                : Client initialize request - Protocol: 2024-11-05, Capabilities: ClientCapabilities[experimental=null, roots=null, sampling=null, elicitation=null], Info: Implementation[name=spring-ai-mcp-client - campaigns-mcp-server, title=campaigns-mcp-server, version=1.0.0]
+2026-05-14T01:49:25.846+05:30  INFO 3686 --- [campaigns] [main] c.e.campaigns.CampaignsApplication       : Started CampaignsApplication in 2.591 seconds (process running for 2.824)
+2026-05-14T01:49:29.777+05:30  INFO 3686 --- [campaigns] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-14T01:49:29.779+05:30  INFO 3686 --- [campaigns] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-14T01:49:29.781+05:30  INFO 3686 --- [campaigns] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
