@@ -7,6 +7,7 @@ import org.springframework.ai.chat.memory.ChatMemory;
 import org.springframework.ai.tool.ToolCallbackProvider;
 import org.springframework.ai.tool.annotation.Tool;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -30,15 +31,15 @@ public class AwsaidemoApplication {
         SpringApplication.run(AwsaidemoApplication.class, args);
     }
 
-    public AwsaidemoApplication(ChatClient.Builder builder, ChatMemory chatMemory, DevTools devTools,
+    public AwsaidemoApplication(ChatClient.Builder builder, DevTools devTools,
                                 @Autowired(required = false)
                                 ToolCallbackProvider toolCallbackProvider) {
         ChatClient.Builder  configured = builder
-                //.defaultTools(devTools)
-                .defaultAdvisors(MessageChatMemoryAdvisor.builder(chatMemory).build());
+                .defaultTools(devTools)
+                ;
 
         if (toolCallbackProvider != null) {
-          //  configured = configured.defaultToolCallbacks(toolCallbackProvider);
+          configured = configured.defaultToolCallbacks(toolCallbackProvider);
         }
 
         this.chatClient = configured.build();
@@ -46,25 +47,19 @@ public class AwsaidemoApplication {
 
     // ============ REST Controller Endpoints ============
     @PostMapping("/ask")
-    public Map<String, String> ask(@RequestParam(required = false) String conversationId, @RequestBody String input) {
-        final var response = askQuestion(conversationId, input);
+    public String ask(@RequestBody String input) {
+        final var response = askQuestion(input);
         System.out.println(response);
         return response;
     }
 
     // ============ Service Logic ============
-    public Map<String, String> askQuestion(String convId, String question) {
-        String conversationId = convId == null ? UUID.randomUUID().toString() : convId;
-        final var response = chatClient.prompt()
+    public String askQuestion(String question) {
+        return chatClient.prompt()
                 .user(question)
-                .advisors(a -> a.param(ChatMemory.CONVERSATION_ID, conversationId))
                 .call()
                 .content();
 
-        return Map.of(
-                "conversationId", conversationId,
-                "response", response
-        );
     }
 
 

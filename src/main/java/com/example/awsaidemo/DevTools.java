@@ -8,7 +8,6 @@ import java.time.LocalDateTime;
 @Component
 public class DevTools {
 
-    // ============ Tool Definitions (DevTools) ============
     @Tool(description = "Get Java version of the project")
     public String getJavaVersion() {
         return "Java 21";

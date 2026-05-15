@@ -13,3 +13,11 @@ spring:
     mcp:
       client:
         enabled: true
+        streamable-http:
+          connections:
+            campaigns:
+              url: http://localhost:8083/mcp
+
+logging:
+  level:
+    org.springframework.ai.mcp: DEBUG

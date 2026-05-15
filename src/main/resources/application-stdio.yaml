@@ -13,3 +13,6 @@ spring:
     mcp:
       client:
         enabled: true
+        stdio:
+          servers-configuration: classpath:mcp-servers-stdio.json
+
